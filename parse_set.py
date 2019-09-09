@@ -22,7 +22,7 @@ def translate_char(char) -> Text:
 
 def main():
     with open(Path('dataset.txt')) as dataset_file:
-        data_string = dataset_file.readline()
+        data_string = dataset_file.readline() # I'm 99.9% confident this dataset is correct
 
     card_strings = grouper(8, data_string, 'x') # x will cause a keyerror in translate_char if present
     cards = []
